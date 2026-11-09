@@ -55,11 +55,11 @@ def render(filename, title, main, home=False, with_profile=True):
 </body></html>'''
     (OUT / filename).write_text(html, encoding='utf-8')
 
-bio = '''<section class="intro"><p class="eyebrow">Fudan University · School of Economics</p><h1>Welcome to my website!</h1>
+bio = '''<section class="intro"><p>Welcome to my website!</p>
 <p>I am an Assistant Professor of Economics at the <a href="https://econ.fudan.edu.cn/">School of Economics, Fudan University</a>.</p>
 <p>I study digital economics and labor economics, with two research agendas. The first examines how AI reshapes expert decision-making and affects welfare. The second investigates how social norms shape human capital investment and fertility.</p>
 <p>I received my Ph.D. in Economics from the Guanghua School of Management at Peking University in 2024. From 2024 to 2026, I was a Postdoctoral Fellow at HKU Business School.</p>
-<p>Please feel free to contact me at <a href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a>.</p>
+<p>Please contact me at <a href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a>.</p>
 </section>'''
 home = bio
 render('index.html','Home',home,True)
