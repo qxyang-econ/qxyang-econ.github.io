@@ -30,14 +30,12 @@ def paper(p, minimal=False):
 def render(filename, title, main, home=False, with_profile=True):
     nav = ''.join(f'<a href="{url}"'+(' aria-current="page"' if url == filename else '')+f'>{label}</a>' for label,url in [('Home','index.html'),('Research','research.html'),('Teaching','teaching.html'),('CV','cv.html')])
     person = {'@context':'https://schema.org', '@type':'Person', 'name':'Qingxu Yang', 'alternateName':'杨卿栩', 'jobTitle':'Assistant Professor', 'affiliation':{'@type':'CollegeOrUniversity','name':'Fudan University'}, 'url':ORIGIN, 'email':'qxyang@fudan.edu.cn'}
-    cv_link = '' if home else '<a class="cv-link" href="#" aria-disabled="true" tabindex="-1" onclick="return false;">Download CV <span aria-hidden="true">↓</span><span class="file-type">PDF</span></a>'
     profile = f'''<aside class="profile" aria-label="Profile">
 <div class="profile-name">Qingxu Yang<span lang="zh-Hans">杨卿栩</span></div>
 <p class="position">Assistant Professor</p><p class="affiliation">School of Economics<br>Fudan University</p>
 <div class="profile-rule"></div>
 <div class="sidebar-section fields"><p class="label">Research fields</p><p>Digital Economics<br>Labor Economics</p></div>
 <div class="sidebar-section"><p class="label">Contact</p><a class="email" href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a><p class="location">Shanghai, China</p></div>
-{cv_link}
 </aside>''' if with_profile else ''
     if not ORIGIN:
         person.pop('url', None)
@@ -59,9 +57,7 @@ def render(filename, title, main, home=False, with_profile=True):
 
 bio = '''<section class="intro"><p class="eyebrow">Fudan University · School of Economics</p><h1>About me</h1>
 <p>I am an Assistant Professor at the <a href="https://econ.fudan.edu.cn/">School of Economics, Fudan University</a>.</p>
-<p>I study digital economics and labor economics. My work spans two main lines of research.</p>
-<p>The first examines how <strong>artificial intelligence</strong> changes expert judgment and decision-making, reshapes the relationship between experts and the people they serve, and affects economic welfare.</p>
-<p>The second focuses on <strong>family economics</strong>. I study how social norms and institutions shape marriage, fertility, and investments within families, with particular attention to women's choices, opportunities, and well-being.</p>
+<p>I study digital economics and labor economics, with two research agendas. The first examines how AI reshapes expert decision-making and affects welfare. The second investigates how social norms shape human capital investment and fertility.</p>
 <p>I received my Ph.D. in Economics from the Guanghua School of Management at Peking University in 2024. From 2024 to 2026, I was a Postdoctoral Fellow at HKU Business School.</p>
 </section>'''
 home = bio
@@ -82,6 +78,7 @@ teaching = '''<div class="page-title"><p class="eyebrow">Teaching</p><h1>Courses
 <p class="teaching-contact">For course enquiries, please contact <a href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a>.</p>'''
 render('teaching.html','Teaching',teaching)
 
-cv = '<p><a href="#" aria-disabled="true" tabindex="-1" onclick="return false;">Download CV</a></p>'
+# The CV file is intentionally absent, so this link opens a 404 page.
+cv = '<p><a href="files/Qingxu_Yang_CV.pdf">Download CV</a></p>'
 render('cv.html','CV',cv,with_profile=False)
 print('Generated 4 pages.')

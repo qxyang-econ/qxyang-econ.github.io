@@ -1,6 +1,6 @@
 # Qingxu Yang — 学术个人主页
 
-这是当前网站第 3 版的完整可维护源码，已整理为可直接上传到 GitHub 的结构。内容包含 Home、Research、Teaching、CV 四页、样式和图标；CV 下载暂为停用的占位链接，不包含 PDF 文件。网站使用静态 HTML/CSS；Abstract 采用浏览器原生展开功能，没有服务器、数据库或运行时依赖。Python 3 只用于修改内容后重新生成页面，不需要安装第三方包。
+这是当前网站第 3 版的完整可维护源码，已整理为可直接上传到 GitHub 的结构。内容包含 Home、Research、Teaching、CV 四页、样式和图标；侧栏没有 CV 下载入口，CV 页的 Download CV 指向暂不存在的文件，点击后进入 404 页面，不包含 PDF 文件。网站使用静态 HTML/CSS；Abstract 采用浏览器原生展开功能，没有服务器、数据库或运行时依赖。Python 3 只用于修改内容后重新生成页面，不需要安装第三方包。
 
 ## 第一次发布到 GitHub Pages
 
@@ -23,7 +23,7 @@ GitHub 仓库保存源码和版本历史，GitHub Pages 负责对外提供网页
 | CV 页的下载链接 | `generate.py` 的 `cv` 变量 |
 | 侧栏、邮箱、导航等共用内容 | `generate.py` 的 `render()` 函数 |
 | 页面配色、字体、间距、布局 | `docs/style.css` |
-| 今后启用 CV 下载 | 将 PDF 放入 `docs/files/Qingxu_Yang_CV.pdf`，并在 `generate.py` 中恢复 CV 页和侧栏的下载链接，再重新生成页面 |
+| 今后启用 CV 下载 | 将 PDF 放入 `docs/files/Qingxu_Yang_CV.pdf` 并提交；CV 页现有链接即会指向该文件 |
 | 页脚的更新时间 | `content.json` 的 `updated` 字段 |
 | 正式网站地址 | `site_config.json` 的 `site_url` 字段 |
 
@@ -67,7 +67,7 @@ python3 -m http.server 8000 --directory docs
 
 ## 此导出版本的范围
 
-基于 2026 年 11 月 4 日网站第 3 版导出，包含两条研究主线介绍、仅一行下载链接的 CV 页，以及仅显示标题与合作者的在研论文列表；工作论文与已发表论文保留 Abstract。为方便 GitHub Pages 的分支发布，原来 `dist` 中的文件改放到 `docs`；页面内容、布局和论文链接均保留。按最新要求，CV 文件不发布，所有 Download CV 链接暂时停用。此包没有包含原托管平台的内部配置或 Git 历史。
+基于 2026 年 11 月 4 日网站第 3 版导出，包含两条研究主线介绍、仅一行下载链接的 CV 页，以及仅显示标题与合作者的在研论文列表；工作论文与已发表论文保留 Abstract。为方便 GitHub Pages 的分支发布，原来 `dist` 中的文件改放到 `docs`；页面内容、布局和论文链接均保留。按最新要求，CV 文件不发布，侧栏下载入口已移除，CV 页下载链接指向不存在的文件并返回 404。此包没有包含原托管平台的内部配置或 Git 历史。
 
 当前包没有 GitHub Actions 自动生成脚本。以上分支发布流程适用于简单维护，无需配置 Actions 权限。如果以后希望只改 JSON 就自动上线，可以另行添加自动构建流程。
 
