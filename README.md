@@ -24,7 +24,6 @@ GitHub 仓库保存源码和版本历史，GitHub Pages 负责对外提供网页
 | 侧栏、邮箱、导航等共用内容 | `generate.py` 的 `render()` 函数 |
 | 页面配色、字体、间距、布局 | `docs/style.css` |
 | 今后启用 CV 下载 | 将 PDF 放入 `docs/files/Qingxu_Yang_CV.pdf` 并提交；CV 页现有链接即会指向该文件 |
-| 页脚的更新时间 | `content.json` 的 `updated` 字段 |
 | 正式网站地址 | `site_config.json` 的 `site_url` 字段 |
 
 `content.json` 中每组论文的排列顺序就是网页上的顺序。期刊文章可用 `language: "in Chinese"` 标注语言。直接修改 JSON 时保持英文双引号和逗号格式正确。

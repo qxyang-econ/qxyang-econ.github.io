@@ -29,10 +29,10 @@ def paper(p, minimal=False):
 
 def render(filename, title, main, home=False, with_profile=True):
     nav = ''.join(f'<a href="{url}"'+(' aria-current="page"' if url == filename else '')+f'>{label}</a>' for label,url in [('Home','index.html'),('Research','research.html'),('Teaching','teaching.html'),('CV','cv.html')])
-    person = {'@context':'https://schema.org', '@type':'Person', 'name':'Qingxu Yang', 'alternateName':'杨卿栩', 'jobTitle':'Assistant Professor', 'affiliation':{'@type':'CollegeOrUniversity','name':'Fudan University'}, 'url':ORIGIN, 'email':'qxyang@fudan.edu.cn'}
+    person = {'@context':'https://schema.org', '@type':'Person', 'name':'Qingxu Yang', 'alternateName':'杨卿栩', 'jobTitle':'Assistant Professor in Economics', 'affiliation':{'@type':'CollegeOrUniversity','name':'Fudan University'}, 'url':ORIGIN, 'email':'qxyang@fudan.edu.cn'}
     profile = f'''<aside class="profile" aria-label="Profile">
 <div class="profile-name">Qingxu Yang<span lang="zh-Hans">杨卿栩</span></div>
-<p class="position">Assistant Professor</p><p class="affiliation">School of Economics<br>Fudan University</p>
+<p class="position">Assistant Professor in Economics</p><p class="affiliation">School of Economics<br>Fudan University</p>
 <div class="profile-rule"></div>
 <div class="sidebar-section fields"><p class="label">Research fields</p><p>Digital Economics<br>Labor Economics</p></div>
 <div class="sidebar-section"><p class="label">Contact</p><a class="email" href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a><p class="location">Shanghai, China</p></div>
@@ -44,19 +44,19 @@ def render(filename, title, main, home=False, with_profile=True):
     html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} | Qingxu Yang</title>
-<meta name="description" content="Qingxu Yang is an Assistant Professor at Fudan University. Research in digital economics, labor economics, artificial intelligence, and expert decision-making.">
+<meta name="description" content="Qingxu Yang is an Assistant Professor in Economics at Fudan University. Research in digital economics, labor economics, artificial intelligence, and expert decision-making.">
 <meta name="theme-color" content="#173e61">{canonical}
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
 <script type="application/ld+json">{json.dumps(person,ensure_ascii=False)}</script></head>
 <body><a class="skip" href="#main">Skip to content</a>
 <div class="page {'page-home' if home else 'page-inner'}"><header class="site-header"><a class="wordmark" href="index.html">Qingxu Yang</a><nav aria-label="Main navigation">{nav}</nav></header>
 <div class="layout{'' if with_profile else ' layout-single'}">{profile}<main id="main" class="{'home' if home else ''}">{main}</main></div>
-<footer><span>© 2026 Qingxu Yang</span><span>Updated {escape(DATA['updated'])}</span></footer></div>
+<footer><span>© 2026 Qingxu Yang</span></footer></div>
 </body></html>'''
     (OUT / filename).write_text(html, encoding='utf-8')
 
 bio = '''<section class="intro"><p class="eyebrow">Fudan University · School of Economics</p><h1>About me</h1>
-<p>I am an Assistant Professor at the <a href="https://econ.fudan.edu.cn/">School of Economics, Fudan University</a>.</p>
+<p>I am an Assistant Professor in Economics at the <a href="https://econ.fudan.edu.cn/">School of Economics, Fudan University</a>.</p>
 <p>I study digital economics and labor economics, with two research agendas. The first examines how AI reshapes expert decision-making and affects welfare. The second investigates how social norms shape human capital investment and fertility.</p>
 <p>I received my Ph.D. in Economics from the Guanghua School of Management at Peking University in 2024. From 2024 to 2026, I was a Postdoctoral Fellow at HKU Business School.</p>
 </section>'''
@@ -69,11 +69,11 @@ for key,title in [('working_papers','Working papers'),('publications','Publicati
 render('research.html','Research',research)
 
 teaching = '''<div class="page-title"><p class="eyebrow">Teaching</p><h1>Courses</h1></div>
-<section class="teaching-section"><div class="section-heading"><h2>Fudan University</h2><span class="term">Fall 2026</span></div>
+<section class="teaching-section"><div class="section-heading"><h2>Fudan University</h2></div>
 <article class="course"><h3>Panel Data Analysis</h3><p>Undergraduate · Instructor</p></article>
 <article class="course"><h3>Digital Economy</h3><p>Graduate · Instructor</p></article>
 <article class="course"><h3>Digital Industrial Policy</h3><p>Graduate · Instructor</p></article></section>
-<section class="teaching-section"><div class="section-heading"><h2>The University of Hong Kong</h2><span class="term">2027 · Scheduled</span></div>
+<section class="teaching-section"><div class="section-heading"><h2>The University of Hong Kong</h2></div>
 <article class="course"><h3>Selected Topics in Digital Economy</h3><p>MECON · Instructor</p></article></section>
 <p class="teaching-contact">For course enquiries, please contact <a href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a>.</p>'''
 render('teaching.html','Teaching',teaching)
