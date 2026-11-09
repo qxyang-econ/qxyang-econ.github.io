@@ -1,0 +1,138 @@
+{
+  "updated": "November 2026",
+  "working_papers": [
+    {
+      "id": "medals",
+      "title": "Medals and Mindsets: How Women’s Olympic Competitiveness Advances Gender Equality",
+      "coauthors": "Heng Chen",
+      "links": [
+        [
+          "SSRN",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5742644"
+        ]
+      ],
+      "abstract": "Can female athletic success reshape beliefs about women’s competitive capacity and advance gender equality? We study this question in the context of China’s return to the Olympics, using athlete records from 1984 to 2004. Exploiting variation in the timing of prefectures’ first female Olympic medalist and differential exposure across birth cohorts, we find that exposure to hometown female medalists narrows gender gaps in education. To address endogeneity, we construct a shift-share instrument that leverages changes in Soviet presence as exogenous shocks to medal opportunities across sports. Further evidence shows that media framing and shifts in fathers’ beliefs underlie these effects."
+    },
+    {
+      "id": "ai-healthcare",
+      "title": "Directional AI Advice: Experimental Evidence from Healthcare",
+      "coauthors": "Yuyu Chen, Hongbin Li, Lingsheng Meng, and Xinyao Qiu",
+      "links": [
+        [
+          "Paper",
+          "https://arxiv.org/pdf/2607.08706"
+        ],
+        [
+          "arXiv",
+          "https://arxiv.org/abs/2607.08706"
+        ]
+      ],
+      "abstract": "Generative AI is fast becoming the first place people turn for expert advice. The advice it provides can be directional rather than neutral, shaped in part by the choices of its designers and regulators. When clients consult AI before meeting an expert, they carry this directional advice into a relationship that once rested on the expert’s judgment alone. We study its consequences in healthcare through a large-scale preregistered field experiment at a Chinese hospital, where we randomize patients’ access to an AI chatbot before their outpatient visit. Examination of the conversation logs shows that the chatbot routinely cautions against the use of medications, especially Traditional Chinese Medicine and antibiotics, while issuing clean recommendations for diagnostic testing, consistent with the liability-driven guardrails encoded in AI training. This directionality propagates into clinical practice. Prescription rates decline among treated patients while diagnostic testing increases, and these effects are more pronounced among physicians who are receptive to patient input and those with more intensive prescribing styles. Beyond shifting healthcare utilization, survey results show that AI access reduces patient compliance and satisfaction, shifting the balance of authority between patients and physicians."
+    },
+    {
+      "id": "cinderella",
+      "title": "Becoming Cinderella: Strategic Beauty Investment Under Marriage Norms",
+      "coauthors": "Heng Chen and Xiangyu Lu",
+      "links": [
+        [
+          "SSRN",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7108879"
+        ]
+      ],
+      "abstract": "This paper studies whether marriage-market incentives induce strategic investment in physical appearance. A randomized partner-profile experiment in China reveals a negative age-based shift in men's evaluations of women around age 31, with subgroup estimates suggesting a less pronounced penalty for profiles with higher education, housing, or an urban family background. Drawing on a nationwide inpatient dataset of over 100,000 plastic-surgery admissions, we document pronounced bunching in women's cosmetic procedures just before the threshold, with no comparable pattern for functional procedures or men. The response is concentrated in facial and breast surgeries, intensifies with fertility norms and marriage-market competition, and weakens with women's labor-market opportunities. A continuous-time marriage-search model rationalizes these patterns as a deadline effect: an age-based penalty induces women to advance the timing of costly, irreversible investments in appearance. The findings show how age-dependent gender norms can shape investment timing and impose gender-specific costs of adjustment."
+    },
+    {
+      "id": "ai-fairness",
+      "title": "The Fair Distribution of Gains from AI: Replacement, Augmentation, and Claims Beyond Current Work",
+      "coauthors": "Kelin Lu",
+      "links": [
+        [
+          "SSRN",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7611298"
+        ]
+      ],
+      "abstract": "How should the gains from AI be divided among displaced workers, remaining workers, and firms? We study fairness preferences in preregistered, incentivized spectator experiments with over 4,800 participants in the United States and China. Spectators divide monetary payoffs from an actual production process. AI replacement reduces displaced workers’ perceived fair claims without eliminating them. The absence of current work and changes in initial allocations partly explain this reduction, but we find no evidence that AI’s superior performance does. Disclosing displaced workers’ past contributions to AI training strengthens their claims, whereas information about reemployment produces no detectable reduction. Remaining workers are viewed as deserving gains from both replacement and augmentation. Disclosing past training contributions does not strengthen augmented workers’ claims. Better performance achieved with AI assistance strengthens augmented workers’ claims in China but weakens them in the United States. Firms’ perceived fair claims depend strongly on the initial assignment of AI gains. Spectators also forgo personal compensation to preserve their chosen fair distributions."
+    },
+    {
+      "id": "judge-evaluation",
+      "title": "Setting the Bench Higher: The Impact of Judge Evaluation Reform on Judicial Performance in China",
+      "coauthors": "Hui Wang, Yuyu Chen, and Yunfeng Song",
+      "links": [
+        [
+          "SSRN",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4925678"
+        ]
+      ],
+      "abstract_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4925678"
+    }
+  ],
+  "publications": [
+    {
+      "id": "courtroom",
+      "title": "Women in the Courtroom: Technology and Justice",
+      "coauthors": "Heng Chen and Yuyu Chen",
+      "journal": "The Review of Economic Studies",
+      "citation": "2026, 93(3): 1574–1601",
+      "links": [
+        [
+          "Journal",
+          "https://doi.org/10.1093/restud/rdaf066"
+        ],
+        [
+          "Paper",
+          "https://www.restud.com/wp-content/uploads/2025/07/MS32629manuscript.pdf"
+        ]
+      ],
+      "abstract": "Our study analyses 6 million civil judgments in China from 2014 to 2018, documenting gender disparities that disfavour female litigants. We investigate the impact of an open justice reform that mandated courts to broadcast legal proceedings live on a centralized online platform. By exploiting variations in its implementation across courts and over time and employing both difference-in-differences and Bartik IV approaches, we find that gender disparities in chances of winning decrease as broadcast intensity increases. Analysis of the textual content of judicial decisions provides further evidence that these changes in judicial outcomes stem from altered judge behaviours (i.e. attention and effort) under enhanced judicial transparency. Our results demonstrate how information technology shapes judges’ conduct, underscoring its broader potential to improve accountability in public institutions."
+    },
+    {
+      "id": "covid-labor",
+      "title": "Gender Disparities in the Labor Market during COVID-19 Lockdowns: Evidence from Online Job Postings and Applications in China",
+      "coauthors": "Jiayin Hu, Xuan Wang, and Junjian Yi",
+      "journal": "Journal of Economic Behavior & Organization",
+      "citation": "2024, 223: 199–215",
+      "links": [
+        [
+          "Journal",
+          "https://doi.org/10.1016/j.jebo.2024.05.011"
+        ]
+      ],
+      "abstract_url": "https://www.sciencedirect.com/science/article/pii/S0167268124001872"
+    },
+    {
+      "id": "digital-governance",
+      "title": "Balancing Security and Development in Digital Governance: Evidence from China’s Education App Regulation",
+      "coauthors": "Ji Xu and Jiayi Hou",
+      "journal": "Management World",
+      "citation": "2026, 42(2): 39–54",
+      "links": [
+        [
+          "Paper",
+          "https://oss.aisixiang.com/download/4ae74e3224aa490033258eb81a6da5f7.pdf"
+        ]
+      ],
+      "abstract_url": "https://oss.aisixiang.com/download/4ae74e3224aa490033258eb81a6da5f7.pdf#page=16",
+      "language": "in Chinese"
+    }
+  ],
+  "work_in_progress": [
+    {
+      "id": "ai-reviewers",
+      "title": "The Impact of AI Reviewers on Reviewer Reliability and Publication Decisions",
+      "coauthors": "Magnus Johannesson, Hao Ma, and Zibo Zhao",
+      "links": []
+    },
+    {
+      "id": "divorce",
+      "title": "Do Divorce Costs Affect Abortion Decisions? Evidence from China’s Family Law Reform",
+      "coauthors": "Heng Chen and Ning Zhang",
+      "links": []
+    },
+    {
+      "id": "patents",
+      "title": "Patent Invalidation, Firm Performance, and Innovation",
+      "coauthors": "Xuan Wang",
+      "links": []
+    }
+  ]
+}
