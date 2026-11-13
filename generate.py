@@ -30,8 +30,9 @@ def paper(p, minimal=False):
 def render(filename, title, main, home=False, with_profile=True):
     nav = ''.join(f'<a href="{url}"'+(' aria-current="page"' if url == filename else '')+f'>{label}</a>' for label,url in [('Home','index.html'),('Research','research.html'),('Teaching','teaching.html'),('CV','cv.html')])
     person = {'@context':'https://schema.org', '@type':'Person', 'name':'Qingxu Yang', 'alternateName':'杨卿栩', 'jobTitle':'Assistant Professor of Economics', 'affiliation':{'@type':'CollegeOrUniversity','name':'Fudan University'}, 'url':ORIGIN, 'email':'qxyang@fudan.edu.cn'}
+    portrait = '<img class="profile-photo" src="qingxu-yang.png" alt="Qingxu Yang" width="1122" height="1402" decoding="async">\n' if home else ''
     profile = f'''<aside class="profile" aria-label="Profile">
-<div class="profile-name">Qingxu Yang<span lang="zh-Hans">杨卿栩</span></div>
+{portrait}<div class="profile-name">Qingxu Yang<span lang="zh-Hans">杨卿栩</span></div>
 <p class="position">Assistant Professor of Economics</p><p class="affiliation">School of Economics<br>Fudan University</p>
 <div class="profile-rule"></div>
 <div class="sidebar-section fields"><p class="label">Research fields</p><p>Digital Economics<br>Labor Economics</p></div>
