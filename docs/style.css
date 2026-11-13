@@ -16,3 +16,5 @@ footer{border-top:1px solid var(--line);padding:23px 0 29px;display:flex;justify
 
 @media(max-width:640px){.page-inner .profile{display:none}.page-inner .layout{padding-top:34px}}
 .layout.layout-single{display:block}
+.profile-photo{display:block;width:100%;height:auto;margin:0 0 24px;border-radius:3px}
+@media(max-width:640px){.page-home .profile{grid-template-columns:112px minmax(0,1fr);column-gap:18px}.profile-photo{grid-column:1;grid-row:1/4;width:112px;max-width:100%;margin:0}.page-home .profile-name{grid-column:2;grid-row:1;display:block;font-size:25px}.page-home .profile-name span{display:block;margin-top:8px;font-size:14px}.page-home .profile .position{grid-column:2;grid-row:2;margin:12px 0 1px;font-size:13px}.page-home .profile .affiliation{grid-column:2;grid-row:3;font-size:13px}}
