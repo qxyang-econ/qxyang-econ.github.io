@@ -31,12 +31,13 @@ def render(filename, title, main, home=False, with_profile=True):
     nav = ''.join(f'<a href="{url}"'+(' aria-current="page"' if url == filename else '')+f'>{label}</a>' for label,url in [('Home','index.html'),('Research','research.html'),('Teaching','teaching.html'),('CV','cv.html')])
     person = {'@context':'https://schema.org', '@type':'Person', 'name':'Qingxu Yang', 'alternateName':'杨卿栩', 'jobTitle':'Assistant Professor of Economics', 'affiliation':{'@type':'CollegeOrUniversity','name':'Fudan University'}, 'url':ORIGIN, 'email':'qxyang@fudan.edu.cn'}
     portrait = '<img class="profile-photo" src="qingxu-yang.png" alt="Qingxu Yang" width="1122" height="1402" decoding="async">\n' if home else ''
-    profile = f'''<aside class="profile" aria-label="Profile">
-{portrait}<div class="profile-name">Qingxu Yang<span lang="zh-Hans">杨卿栩</span></div>
+    identity = '''<div class="profile-name">Qingxu Yang<span lang="zh-Hans">杨卿栩</span></div>
 <p class="position">Assistant Professor of Economics</p><p class="affiliation">School of Economics<br>Fudan University</p>
 <div class="profile-rule"></div>
 <div class="sidebar-section fields"><p class="label">Research fields</p><p>Digital Economics<br>Labor Economics</p></div>
-<div class="sidebar-section"><p class="label">Contact</p><a class="email" href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a></div>
+''' if not home else ''
+    profile = f'''<aside class="profile" aria-label="Profile">
+{portrait}{identity}<div class="sidebar-section"><p class="label">Contact</p><a class="email" href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a></div>
 <div class="sidebar-section office"><p class="label">Office</p><p>Room 904, Building A<br>579 Guoquan Road<br>Shanghai 200433, China</p></div>
 </aside>''' if with_profile else ''
     if not ORIGIN:
@@ -57,7 +58,7 @@ def render(filename, title, main, home=False, with_profile=True):
 </body></html>'''
     (OUT / filename).write_text(html, encoding='utf-8')
 
-bio = '''<section class="intro"><p>Welcome to my website!</p>
+bio = '''<section class="intro"><p>Welcome! My name is Qingxu Yang <span lang="zh-Hans">杨卿栩</span></p>
 <p>I am an Assistant Professor of Economics at the <a href="https://econ.fudan.edu.cn/">School of Economics, Fudan University</a>.</p>
 <p>I study digital economics and labor economics, with two research agendas. The first examines how AI reshapes expert decision-making and affects welfare. The second investigates how social norms shape human capital investment and fertility.</p>
 <p>I received my Ph.D. in Economics from the Guanghua School of Management at Peking University in 2024. From 2024 to 2026, I was a Postdoctoral Fellow at HKU Business School.</p>
