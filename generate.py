@@ -35,7 +35,8 @@ def render(filename, title, main, home=False, with_profile=True):
 <p class="position">Assistant Professor of Economics</p><p class="affiliation">School of Economics<br>Fudan University</p>
 <div class="profile-rule"></div>
 <div class="sidebar-section fields"><p class="label">Research fields</p><p>Digital Economics<br>Labor Economics</p></div>
-<div class="sidebar-section"><p class="label">Contact</p><a class="email" href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a><p class="location">Shanghai, China</p></div>
+<div class="sidebar-section"><p class="label">Contact</p><a class="email" href="mailto:qxyang@fudan.edu.cn">qxyang@fudan.edu.cn</a></div>
+<div class="sidebar-section office"><p class="label">Office</p><p>Room 904, Building A<br>579 Guoquan Road<br>Shanghai 200433, China</p></div>
 </aside>''' if with_profile else ''
     if not ORIGIN:
         person.pop('url', None)
